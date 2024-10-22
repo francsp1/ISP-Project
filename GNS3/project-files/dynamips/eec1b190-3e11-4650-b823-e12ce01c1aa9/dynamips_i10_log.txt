@@ -1,0 +1,51 @@
+Sep 21 14:47:27.331 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 21 14:47:27.333 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 1171.
+Sep 21 14:47:27.394 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 21 14:47:27.396 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 21 14:47:27.399 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips 
+Sep 21 14:47:27.399 GENERAL: working_dir=C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips
+Sep 21 14:47:27.402 HYPERVISOR: exec_cmd: vm create R9 16 c7200 
+Sep 21 14:47:27.403 VM: VM R9 created.
+Sep 21 14:47:27.405 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 2009 
+Sep 21 14:47:27.406 HYPERVISOR: exec_cmd: c7200 get_mac_addr R9 
+Sep 21 14:47:27.408 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:27.409 HYPERVISOR: exec_cmd: vm slot_add_binding R9 0 0 C7200-IO-FE 
+Sep 21 14:47:27.410 HYPERVISOR: exec_cmd: vm set_ios R9 C:\Users\franc\GNS3\images\IOS\c7200-adventerprisek9-mz.152-4.M10.image 
+Sep 21 14:47:27.412 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:27.413 HYPERVISOR: exec_cmd: vm set_idle_pc R9 0x60189224 
+Sep 21 14:47:27.415 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:27.416 HYPERVISOR: exec_cmd: vm slot_add_binding R9 3 0 PA-2FE-TX 
+Sep 21 14:47:27.417 HYPERVISOR: exec_cmd: vm set_ram R9 254 
+Sep 21 14:47:27.418 HYPERVISOR: exec_cmd: vm set_disk0 R9 0 
+Sep 21 14:47:27.420 HYPERVISOR: exec_cmd: vm set_nvram R9 512 
+Sep 21 14:47:27.422 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:27.423 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 PA-2FE-TX 
+Sep 21 14:47:27.439 HYPERVISOR: exec_cmd: c7200 set_mac_addr R9 ca10.159c.0000 
+Sep 21 14:47:27.464 HYPERVISOR: exec_cmd: vm set_exec_area R9 64 
+Sep 21 14:47:27.466 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:27.489 HYPERVISOR: exec_cmd: vm slot_add_binding R9 2 0 PA-2FE-TX 
+Sep 21 14:47:27.501 HYPERVISOR: exec_cmd: vm set_config R9 configs/i16_startup-config.cfg 
+Sep 21 14:47:27.528 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+Sep 21 14:47:27.550 HYPERVISOR: exec_cmd: vm set_ghost_file R9 c7200-adventerprisek9-mz.152-4.M10.image-254.ghost 
+Sep 21 14:47:29.733 HYPERVISOR: exec_cmd: nio create_udp udp-31af9a8d-3aff-4dcc-a2bf-478082d34d3c 10017 127.0.0.1 10016 
+Sep 21 14:47:29.753 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 0 0 udp-31af9a8d-3aff-4dcc-a2bf-478082d34d3c 
+Sep 21 14:47:29.764 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:29.780 HYPERVISOR: exec_cmd: nio create_udp udp-23e7177c-a632-4e32-a732-038f5e692b60 10019 127.0.0.1 10018 
+Sep 21 14:47:29.783 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 1 0 udp-23e7177c-a632-4e32-a732-038f5e692b60 
+Sep 21 14:47:29.793 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:29.839 HYPERVISOR: exec_cmd: nio create_udp udp-7c7abd03-426d-424a-b01d-7f782e529605 10020 127.0.0.1 10021 
+Sep 21 14:47:29.852 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 3 0 udp-7c7abd03-426d-424a-b01d-7f782e529605 
+Sep 21 14:47:29.854 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:29.884 HYPERVISOR: exec_cmd: nio create_udp udp-3e7ed8c9-3e51-4caf-882c-62c238a0cfd9 10023 127.0.0.1 10022 
+Sep 21 14:47:29.906 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 2 0 udp-3e7ed8c9-3e51-4caf-882c-62c238a0cfd9 
+Sep 21 14:47:29.924 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:30.021 HYPERVISOR: exec_cmd: nio create_udp udp-aa543806-35f1-42e5-b7c0-d6f1cfa2e853 10030 127.0.0.1 10031 
+Sep 21 14:47:30.032 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 3 1 udp-aa543806-35f1-42e5-b7c0-d6f1cfa2e853 
+Sep 21 14:47:30.066 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:39.729 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 21 14:47:39.739 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 21 14:47:39.750 HYPERVISOR: exec_cmd: vm delete R9 
+Sep 21 14:47:39.750 VM: VM R9 destroyed.
+Sep 21 14:47:39.807 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 21 14:47:40.036 HYPERVISOR: Stopped.
+Sep 21 14:47:40.036 GENERAL: reset done.

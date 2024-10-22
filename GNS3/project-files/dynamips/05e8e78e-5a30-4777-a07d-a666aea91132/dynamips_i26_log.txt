@@ -1,0 +1,17 @@
+Sep 21 14:47:28.439 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 21 14:47:28.441 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 1204.
+Sep 21 14:47:28.927 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 21 14:47:28.929 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 21 14:47:28.929 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips 
+Sep 21 14:47:28.930 GENERAL: working_dir=C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips
+Sep 21 14:47:28.930 HYPERVISOR: exec_cmd: ethsw create SW4 
+Sep 21 14:47:30.502 HYPERVISOR: exec_cmd: nio create_udp udp-23ded246-8cd0-4b3a-8353-c5704d1e1b3f 10058 127.0.0.1 10059 
+Sep 21 14:47:30.524 HYPERVISOR: exec_cmd: ethsw add_nio SW4 udp-23ded246-8cd0-4b3a-8353-c5704d1e1b3f 
+Sep 21 14:47:30.562 HYPERVISOR: exec_cmd: ethsw set_access_port SW4 udp-23ded246-8cd0-4b3a-8353-c5704d1e1b3f 1 
+Sep 21 14:47:30.577 HYPERVISOR: exec_cmd: nio create_udp udp-f9857eb1-ad48-420e-8152-6874b5e9a892 10063 127.0.0.1 10062 
+Sep 21 14:47:30.600 HYPERVISOR: exec_cmd: ethsw add_nio SW4 udp-f9857eb1-ad48-420e-8152-6874b5e9a892 
+Sep 21 14:47:30.640 HYPERVISOR: exec_cmd: ethsw set_access_port SW4 udp-f9857eb1-ad48-420e-8152-6874b5e9a892 1 
+Sep 21 14:47:39.060 HYPERVISOR: exec_cmd: ethsw delete SW4 
+Sep 21 14:47:39.121 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 21 14:47:39.566 HYPERVISOR: Stopped.
+Sep 21 14:47:39.566 GENERAL: reset done.

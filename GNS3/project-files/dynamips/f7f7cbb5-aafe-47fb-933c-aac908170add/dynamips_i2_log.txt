@@ -1,0 +1,45 @@
+Sep 21 14:47:25.244 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 21 14:47:25.247 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 1154.
+Sep 21 14:47:25.716 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 21 14:47:25.718 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 21 14:47:25.719 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips 
+Sep 21 14:47:25.730 GENERAL: working_dir=C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips
+Sep 21 14:47:25.730 HYPERVISOR: exec_cmd: vm create R1 5 c7200 
+Sep 21 14:47:25.733 VM: VM R1 created.
+Sep 21 14:47:25.734 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 2001 
+Sep 21 14:47:25.735 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Sep 21 14:47:25.737 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:25.738 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Sep 21 14:47:25.739 HYPERVISOR: exec_cmd: vm set_ios R1 C:\Users\franc\GNS3\images\IOS\c7200-adventerprisek9-mz.152-4.M10.image 
+Sep 21 14:47:25.741 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:25.743 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x6062f920 
+Sep 21 14:47:25.744 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:25.746 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 PA-2FE-TX 
+Sep 21 14:47:25.747 HYPERVISOR: exec_cmd: vm set_ram R1 254 
+Sep 21 14:47:25.749 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Sep 21 14:47:25.751 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Sep 21 14:47:25.752 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:25.754 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Sep 21 14:47:25.755 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca05.24f8.0000 
+Sep 21 14:47:25.756 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Sep 21 14:47:25.758 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:25.760 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-2FE-TX 
+Sep 21 14:47:25.763 HYPERVISOR: exec_cmd: vm set_config R1 configs/i5_startup-config.cfg 
+Sep 21 14:47:27.183 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Sep 21 14:47:27.184 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c7200-adventerprisek9-mz.152-4.M10.image-254.ghost 
+Sep 21 14:47:29.342 HYPERVISOR: exec_cmd: nio create_udp udp-0077566a-d00b-4c53-8e1f-9d1b4d9f27e9 10002 127.0.0.1 10003 
+Sep 21 14:47:29.343 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-0077566a-d00b-4c53-8e1f-9d1b4d9f27e9 
+Sep 21 14:47:29.343 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:29.466 HYPERVISOR: exec_cmd: nio create_udp udp-77e65fa7-b580-4353-a9c9-42cd23b89cc5 10008 127.0.0.1 10009 
+Sep 21 14:47:29.467 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-77e65fa7-b580-4353-a9c9-42cd23b89cc5 
+Sep 21 14:47:29.468 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:30.404 HYPERVISOR: exec_cmd: nio create_udp udp-11a76aed-6782-47dc-a675-e0918a0af36d 10051 127.0.0.1 10050 
+Sep 21 14:47:30.423 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-11a76aed-6782-47dc-a675-e0918a0af36d 
+Sep 21 14:47:30.440 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:39.729 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 21 14:47:39.741 HYPERVISOR: exec_cmd: vm extract_config R1 
+Sep 21 14:47:39.750 HYPERVISOR: exec_cmd: vm delete R1 
+Sep 21 14:47:39.751 VM: VM R1 destroyed.
+Sep 21 14:47:39.771 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 21 14:47:39.897 HYPERVISOR: Stopped.
+Sep 21 14:47:39.897 GENERAL: reset done.

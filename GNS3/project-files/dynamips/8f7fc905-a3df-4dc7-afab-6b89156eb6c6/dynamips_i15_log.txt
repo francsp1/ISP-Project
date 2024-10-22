@@ -1,0 +1,51 @@
+Sep 21 14:47:27.580 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 21 14:47:27.582 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 1181.
+Sep 21 14:47:27.610 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 21 14:47:27.622 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 21 14:47:27.629 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips 
+Sep 21 14:47:27.629 GENERAL: working_dir=C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips
+Sep 21 14:47:27.640 HYPERVISOR: exec_cmd: vm create R12 3 c7200 
+Sep 21 14:47:27.650 VM: VM R12 created.
+Sep 21 14:47:27.651 HYPERVISOR: exec_cmd: vm set_con_tcp_port R12 2012 
+Sep 21 14:47:27.652 HYPERVISOR: exec_cmd: c7200 get_mac_addr R12 
+Sep 21 14:47:27.653 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:27.654 HYPERVISOR: exec_cmd: vm slot_add_binding R12 0 0 C7200-IO-FE 
+Sep 21 14:47:27.670 HYPERVISOR: exec_cmd: vm set_ios R12 C:\Users\franc\GNS3\images\IOS\c7200-adventerprisek9-mz.152-4.M10.image 
+Sep 21 14:47:27.694 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:27.695 HYPERVISOR: exec_cmd: vm set_idle_pc R12 0x60189224 
+Sep 21 14:47:27.696 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:27.696 HYPERVISOR: exec_cmd: vm slot_add_binding R12 3 0 PA-2FE-TX 
+Sep 21 14:47:27.697 HYPERVISOR: exec_cmd: vm set_ram R12 254 
+Sep 21 14:47:27.697 HYPERVISOR: exec_cmd: vm set_disk0 R12 0 
+Sep 21 14:47:27.698 HYPERVISOR: exec_cmd: vm set_nvram R12 512 
+Sep 21 14:47:27.698 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:27.699 HYPERVISOR: exec_cmd: vm slot_add_binding R12 1 0 PA-2FE-TX 
+Sep 21 14:47:27.699 HYPERVISOR: exec_cmd: c7200 set_mac_addr R12 ca03.2fbc.0000 
+Sep 21 14:47:27.699 HYPERVISOR: exec_cmd: vm set_exec_area R12 64 
+Sep 21 14:47:27.700 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:27.700 HYPERVISOR: exec_cmd: vm slot_add_binding R12 2 0 PA-2FE-TX 
+Sep 21 14:47:27.702 HYPERVISOR: exec_cmd: vm set_config R12 configs/i3_startup-config.cfg 
+Sep 21 14:47:27.703 HYPERVISOR: exec_cmd: vm set_ghost_status R12 2 
+Sep 21 14:47:27.703 HYPERVISOR: exec_cmd: vm set_ghost_file R12 c7200-adventerprisek9-mz.152-4.M10.image-254.ghost 
+Sep 21 14:47:29.986 HYPERVISOR: exec_cmd: nio create_udp udp-bfd13bcc-6453-4bb1-ac59-56b468b93d94 10029 127.0.0.1 10028 
+Sep 21 14:47:29.996 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 0 0 udp-bfd13bcc-6453-4bb1-ac59-56b468b93d94 
+Sep 21 14:47:30.022 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:30.055 HYPERVISOR: exec_cmd: nio create_udp udp-1c1d47e9-42fc-4172-ad65-d48c059bb618 10031 127.0.0.1 10030 
+Sep 21 14:47:30.074 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 3 1 udp-1c1d47e9-42fc-4172-ad65-d48c059bb618 
+Sep 21 14:47:30.091 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:30.114 HYPERVISOR: exec_cmd: nio create_udp udp-2e5640f3-0a79-4863-87c5-78aec63ec215 10032 127.0.0.1 10033 
+Sep 21 14:47:30.133 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 2 1 udp-2e5640f3-0a79-4863-87c5-78aec63ec215 
+Sep 21 14:47:30.167 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:30.431 HYPERVISOR: exec_cmd: nio create_udp udp-bd21bf29-e319-4edf-a2c0-f946622c0e5b 10054 127.0.0.1 10055 
+Sep 21 14:47:30.440 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 1 1 udp-bd21bf29-e319-4edf-a2c0-f946622c0e5b 
+Sep 21 14:47:30.458 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:30.554 HYPERVISOR: exec_cmd: nio create_udp udp-69032103-655b-4faf-b4f2-42accfaaab7c 10060 127.0.0.1 10061 
+Sep 21 14:47:30.564 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 2 0 udp-69032103-655b-4faf-b4f2-42accfaaab7c 
+Sep 21 14:47:30.567 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:39.728 HYPERVISOR: exec_cmd: vm get_status R12 
+Sep 21 14:47:39.736 HYPERVISOR: exec_cmd: vm extract_config R12 
+Sep 21 14:47:39.762 HYPERVISOR: exec_cmd: vm delete R12 
+Sep 21 14:47:39.763 VM: VM R12 destroyed.
+Sep 21 14:47:39.808 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 21 14:47:40.294 HYPERVISOR: Stopped.
+Sep 21 14:47:40.294 GENERAL: reset done.

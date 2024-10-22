@@ -1,0 +1,58 @@
+Sep 21 14:47:25.244 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 21 14:47:25.248 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 1158.
+Sep 21 14:47:25.717 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 21 14:47:25.718 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 21 14:47:25.719 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips 
+Sep 21 14:47:25.728 GENERAL: working_dir=C:\Users\franc\OneDrive\EI\3ano\TAR\projeto\2\parte2\projeto_TAR_V42\project-files\dynamips
+Sep 21 14:47:25.729 HYPERVISOR: exec_cmd: vm create R4 11 c7200 
+Sep 21 14:47:25.732 VM: VM R4 created.
+Sep 21 14:47:25.732 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2004 
+Sep 21 14:47:25.733 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Sep 21 14:47:25.734 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:25.735 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Sep 21 14:47:25.736 HYPERVISOR: exec_cmd: vm set_ios R4 C:\Users\franc\GNS3\images\IOS\c7200-adventerprisek9-mz.152-4.M10.image 
+Sep 21 14:47:25.738 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:25.739 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60189224 
+Sep 21 14:47:25.741 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:25.743 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 PA-2FE-TX 
+Sep 21 14:47:25.744 HYPERVISOR: exec_cmd: vm set_ram R4 254 
+Sep 21 14:47:25.745 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Sep 21 14:47:25.747 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Sep 21 14:47:25.748 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:25.750 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+Sep 21 14:47:25.752 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca0b.1118.0000 
+Sep 21 14:47:25.753 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Sep 21 14:47:25.754 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:25.756 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-2FE-TX 
+Sep 21 14:47:25.758 HYPERVISOR: exec_cmd: vm set_config R4 configs/i11_startup-config.cfg 
+Sep 21 14:47:25.760 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Sep 21 14:47:25.762 VM: VM Ghost created.
+Sep 21 14:47:25.765 HYPERVISOR: exec_cmd: vm set_ios Ghost C:\Users\franc\GNS3\images\IOS\c7200-adventerprisek9-mz.152-4.M10.image 
+Sep 21 14:47:25.767 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 21 14:47:25.768 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-adventerprisek9-mz.152-4.M10.image-254.ghost 
+Sep 21 14:47:25.768 HYPERVISOR: exec_cmd: vm set_ram Ghost 254 
+Sep 21 14:47:25.769 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 21 14:47:25.788 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 21 14:47:26.942 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 21 14:47:26.942 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 21 14:47:27.098 VM: VM Ghost shutdown.
+Sep 21 14:47:27.099 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 21 14:47:27.099 VM: VM Ghost destroyed.
+Sep 21 14:47:27.107 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Sep 21 14:47:27.108 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c7200-adventerprisek9-mz.152-4.M10.image-254.ghost 
+Sep 21 14:47:29.304 HYPERVISOR: exec_cmd: nio create_udp udp-1e3a08be-9ccd-4a25-98c8-2e21e3909ff2 10000 127.0.0.1 10001 
+Sep 21 14:47:29.305 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-1e3a08be-9ccd-4a25-98c8-2e21e3909ff2 
+Sep 21 14:47:29.305 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:29.377 HYPERVISOR: exec_cmd: nio create_udp udp-ef4afd6e-6165-43dd-8f9c-eca06e31cf36 10004 127.0.0.1 10005 
+Sep 21 14:47:29.378 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-ef4afd6e-6165-43dd-8f9c-eca06e31cf36 
+Sep 21 14:47:29.378 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:29.605 HYPERVISOR: exec_cmd: nio create_udp udp-1b4d7ce5-31d5-4ecd-b48c-e0256e08d3ac 10012 127.0.0.1 10013 
+Sep 21 14:47:29.607 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 1 udp-1b4d7ce5-31d5-4ecd-b48c-e0256e08d3ac 
+Sep 21 14:47:29.627 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:39.726 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 21 14:47:39.731 HYPERVISOR: exec_cmd: vm extract_config R4 
+Sep 21 14:47:39.747 HYPERVISOR: exec_cmd: vm delete R4 
+Sep 21 14:47:39.747 VM: VM R4 destroyed.
+Sep 21 14:47:39.759 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 21 14:47:39.900 HYPERVISOR: Stopped.
+Sep 21 14:47:39.900 GENERAL: reset done.
